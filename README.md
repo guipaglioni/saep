@@ -1,4 +1,4 @@
-Para o projeto funcionar se um git clone no repositorio
+Para o projeto funcionar de um git clone no repositorio
 
 para iniciar o frontend-professores basta entrar na pasta professores e rodar os comandos
 
