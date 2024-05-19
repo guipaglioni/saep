@@ -34,7 +34,7 @@ insert into atividades(descricao, turma_id) values ('Lista de exercicios ruby', 
 insert into atividades(descricao, turma_id) values ('Lista de exercicios javascript', 1);
 
 altere as configurações da api para conectar o banco de dados, em cada controler do professores-backend tem um bloco de codigo de conexão como o do exemplo abaixo 
-
+{
 const connection = mysql.createConnection({
 
     host: 'localhost',
@@ -48,5 +48,5 @@ const connection = mysql.createConnection({
     database: 'mydb'
 
 });
-
+}
 altere para as configurações de seu banco
