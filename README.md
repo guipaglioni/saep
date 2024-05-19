@@ -17,10 +17,20 @@ para iniciar seu banco sincronize o modelo de dados disponivel como schema_profe
 insira alguns dados 
 
 insert into usuarios(nome, email, senha) values ('kaka', 'kaka@gmail.com', 'sucodemaracuja');
+
+
 insert into turmas(nome_turma, usuario_id) values ('idev1', 1);
+
+
 insert into atividades(descricao, turma_id) values ('Lista de exercicios python', 1);
+
+
 insert into atividades(descricao, turma_id) values ('Lista de exercicios php', 1);
+
+
 insert into atividades(descricao, turma_id) values ('Lista de exercicios ruby', 1);
+
+
 insert into atividades(descricao, turma_id) values ('Lista de exercicios javascript', 1);
 
 altere as configurações da api para conectar o banco de dados, em cada controler do professores-backend tem um bloco de codigo de conexão como o do exemplo abaixo 
