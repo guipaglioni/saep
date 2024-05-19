@@ -36,11 +36,17 @@ insert into atividades(descricao, turma_id) values ('Lista de exercicios javascr
 altere as configurações da api para conectar o banco de dados, em cada controler do professores-backend tem um bloco de codigo de conexão como o do exemplo abaixo 
 
 const connection = mysql.createConnection({
+
     host: 'localhost',
+
     port: '3307',
+    
     user: 'root',
+    
     password: '21548721',
+    
     database: 'mydb'
+
 });
 
 altere para as configurações de seu banco
