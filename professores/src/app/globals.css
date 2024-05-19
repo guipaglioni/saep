@@ -1,0 +1,133 @@
+/* Estilo para o contêiner principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para os botões */
+button {
+  background-color: #0074D9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #005ea6;
+}
+
+/* Estilo para a lista de turmas */
+ul {
+  list-style: none;
+  padding: 0;
+  height: 70vh;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para os botões de ação nas turmas */
+li button {
+  background-color: #FF4136;
+}
+
+/* Estilo para os botões de visualização */
+li button.view {
+  background-color: #2ECC40;
+}
+
+/* Estilo para o modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.modal button {
+  background-color: #0074D9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #005ea6;
+}
+
+/* Estilo para a lista de turmas */
+.turma-list {
+  list-style: none;
+  padding: 0;
+}
+
+.turma-item {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Alinhando o título e os botões nos extremos */
+  align-items: center; /* Centralizando verticalmente */
+}
+
+.turma-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os botões de ação */
+.action-button {
+  background-color: #0074D9;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.action-button:hover {
+  background-color: #005ea6;
+}
