@@ -29,22 +29,6 @@ export default function Home() {
 
 
   useEffect(() => {
-    let localToken = window.localStorage.getItem('token');
-    localToken = parseJwt(localToken)
-    setProfessorNome(localToken.name)
-
-    axios.get(`http://localhost:8080/getTurmas/${localToken.id}`)
-      .then(function (response) {
-        setAlunos(response.data)
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    if (localToken) {
-      setToken(localToken);
-    }
-
     const cheklogin = async () => {
       try {
         const login = await getCookies()
@@ -55,8 +39,23 @@ export default function Home() {
         console.log(err)
       }
     }
-
     cheklogin()
+    if (localStorage.getItem('token')) {
+      let localToken = window.localStorage.getItem('token');
+      localToken = parseJwt(localToken)
+      setProfessorNome(localToken.name)
+      axios.get(`http://localhost:8080/getTurmas/${localToken.id}`)
+        .then(function (response) {
+          setAlunos(response.data)
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+  
+      if (localToken) {
+        setToken(localToken);
+      }
+    }
   }, []);
 
   const handleCadastroTurma = () => {
